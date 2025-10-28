@@ -1,37 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="my_style.css">
-    <title>My agency</title>
-</head>
-<body>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="my_style.css">
+		<script src="js/nav.js" defer></script>
 
-	<nav>
-		<ul>
-		  <li><a href="index.html">Who I am</a></li>
-		  <li><a href="nave.html" class="current"> Nave</a></li>
-		  <li><a href="my_artistic_self.html"><em>fashun</em></a></li>
-		  <li><a href="marketplace.html">marketplace</a></li>
-		  <li><a href="calculators.html">calculators</a></li>
-		</ul>
-	</nav>
-	
-	<div class="body_wraper">	
-	
-    <h1>Nave Automation and Creative Agency </h1>
-	<img src="images/logo.png" alt="Nave logo" style="border: 3px solid #C89656; border-radius: 15px;">
-    <h2>About the agency</h2>
+		<title>My agency</title>
+	</head>
+	<body>
 
-  
-    <p>Nave is an AI automation agency, founded by <a href="index.html">Joseph Antony Roumanos</a>, specializing mainly in automating lead captures and generations for Real estate agencies. Currently, using automated workflows and systems,
-	I automate inbound reach, emails and phone callers.<br> Part of Nave will also be an AI modeling agency, where I create ads and marketing campaigns, along side content for 
-	fashion and beauty houses using workflows</p>
-	
-	</div>
-<footer>
-  This website is made for CS203 labs!
-</footer>	   
-</body>
-</html>
+		<nav id="main-nav"></nav>
+	<script>
+	  document.addEventListener('DOMContentLoaded', () => {
+	  const current_path = location.pathname;
+	setNav(current_path);
+	});
+	</script>
+		
+		<div class="body_wraper">	
+		
+		<h1>Nave Automation and Creative Agency </h1>
+		<img src="images/logo.png" alt="Nave logo" style="border: 3px solid #C89656; border-radius: 15px;">
+		<h2>About the agency</h2>
+
+	  
+		<p>Nave is an AI automation agency, founded by <a href="index.html">Joseph Antony Roumanos</a>, specializing mainly in automating lead captures and generations for Real estate agencies. Currently, using automated workflows and systems,
+		I automate inbound reach, emails and phone callers.<br> Part of Nave will also be an AI modeling agency, where I create ads and marketing campaigns, along side content for 
+		fashion and beauty houses using workflows</p>
+		
+		</div>
+	<footer>
+	  This website is made for CS203 labs!
+	</footer>	   
+	</body>
+	</html>
