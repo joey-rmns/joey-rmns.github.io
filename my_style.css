@@ -1,3 +1,28 @@
+#fashion-quiz {
+  background: #ffffff;
+  border: 1px solid #dbe4ec;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow:
+    0 10px 18px rgba(2,25,48,0.06),
+    0 2px 0 0 #eef3f8 inset;
+}
+
+.form-row {
+  border: 1px solid #e2eaf2;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: 800;
+  color: #043565;
+  letter-spacing: 0.2px;
+}
+
 a:link {
   color: #404e5c;
   text-decoration: none; 
@@ -38,8 +63,8 @@ nav {
   left: 0;
   width: 100%;       
   background-color: #324a5f;
-  padding: 0.8% 0.8%;     /* vertical padding only (no side gaps) */
-  border: none;        /* remove any borders creating gaps */
+  padding: 0.8% 0.8%;    
+  border: none;        
 }
 
 
@@ -52,7 +77,7 @@ nav ul {
 }
 
 nav li {
-  margin:0 12.5%;
+  margin:0 7.5%;
 }
 
 nav a {
