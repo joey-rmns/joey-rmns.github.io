@@ -18,6 +18,7 @@
 	setNav(current_path);
 	});
 	</script>
+
 		  
 		<div class="body_wraper">
 
@@ -50,6 +51,9 @@
 		</ol>
 	  
 		</div>
+		
+
+	
 	<footer>
 	  This website is made for CS203 labs!
 	</footer>
