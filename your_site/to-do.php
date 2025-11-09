@@ -10,7 +10,7 @@
   <title>My to do list</title>
 </head>
 <body>
-<nav id="main-nav"></nav>
+<?php require_once 'nav.php'; ?>
 
 	<script>
 	  document.addEventListener('DOMContentLoaded', () => {
@@ -24,7 +24,7 @@
 
     <form id="todo-form" class="todo-form" onsubmit="return false;">
       <label for="todo-input" class="visually-hidden">Add a to‑do item</label>
-      <input id="todo-input" type="text" placeholder="Get a gift for hubby’s anniversary" />
+      <input id="todo-input" type="text" placeholder="finish the lab" />
       <button id="add-btn" type="button">Add item</button>
     </form>
 
@@ -36,18 +36,14 @@
   </main>
 
 <script>
-  // Storage key (must match everywhere)
   const STORAGE_KEY = 'todo_items_v1';
 
-  // State
   let items = [];
 
-  // DOM
   const $input = document.getElementById('todo-input');
   const $addBtn = document.getElementById('add-btn');
   const $list = document.getElementById('todo-list');
-
-  // Load from localStorage
+  
   function load() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -59,12 +55,10 @@
     }
   }
 
-  // Save to localStorage
   function save() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
   }
 
-  // Render a single item safely (use textContent, not innerHTML)
   function renderItem(item_text, id) {
     const li = document.createElement('li');
     li.className = 'todo-item';
@@ -88,14 +82,12 @@
     li.appendChild(actions);
     $list.appendChild(li);
   }
-
-  // Render whole list
+  
   function renderAll() {
     $list.innerHTML = '';
     items.forEach(({ text, id }) => renderItem(text, id));
   }
 
-  // Add item flow
   function addItem() {
     const text = $input.value.trim();
     if (!text) {
@@ -108,32 +100,34 @@
 
     const item = { id, text };
     items.push(item);
-    save();                 // persist after push
+    save();              
     renderItem(item.text, item.id);
     $input.value = '';
     $input.focus();
   }
 
-  // Remove item (by id), then persist
+ 
   function removeItem(id) {
     items = items.filter(i => i.id !== id);
     save();
     renderAll();
   }
 
-  // Wire events
   document.addEventListener('DOMContentLoaded', () => {
     if (typeof setNav === 'function') setNav(location.pathname);
 
-    load();       // load from storage
-    renderAll();  // draw saved items
+    load();       
+    renderAll();  
 
     $addBtn.addEventListener('click', addItem);
-    // Enter key on input
+
     $input.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') addItem();
     });
   });
 </script>
+
+<?php require_once 'footer.php'; ?>
+
 <body/>
 </html>
