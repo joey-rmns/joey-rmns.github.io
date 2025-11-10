@@ -10,14 +10,8 @@
 	</head>
 	<body>
 
-		<nav id="main-nav"></nav>
-	<script>
-	  document.addEventListener('DOMContentLoaded', () => {
-	  const current_path = location.pathname;
-	setNav(current_path);
-	});
-	</script>
-
+		<?php require_once 'nav.php'; ?>
+	
 		<div class="body_wraper">	
 		
 		<h1>Nave Automation and Creative Agency </h1>
@@ -30,8 +24,7 @@
 		fashion and beauty houses using workflows</p>
 		
 		</div>
-	<footer>
-	  This website is made for CS203 labs!
-	</footer>	   
+		
+	<?php include 'footer.php'; ?>	   
 	</body>
 	</html>

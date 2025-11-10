@@ -16,7 +16,7 @@
     <h1>Which fashion house are you?</h1>
     <p>Answer the questions below. If your total score is more than 20, we’ll reveal your haute-couture match.</p>
 
-    <form id="fashion-quiz" action="#" method="get" novalidate onsubmit="return validate(event)">
+    <form id="fashion-quiz" action="quiz_verification.php" method="get" novalidate>
       <fieldset>
         <legend>Your info</legend>
 
@@ -89,10 +89,6 @@
     </form>
   </main>
 
-  <footer class="site-footer">
-    This website is made for CS203 labs!
-  </footer>
-
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const current_path = location.pathname;
@@ -101,8 +97,6 @@
       const form = document.getElementById('fashion-quiz');
       const out = document.getElementById('result');
 
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
 
         let total = 0;
 
@@ -117,8 +111,8 @@
         total += q3;
 
         const q4 = Number(form.q4.value || 0);
-        total += Math.min(5, Math.round(q4 / 4)); // 0–20 items -> 0–5 points
-
+        total += Math.min(5, Math.round(q4 / 4)); 
+		
         const q5 = form.querySelector('input[name="q5"]:checked');
         if (q5) total += Number(q5.value);
 

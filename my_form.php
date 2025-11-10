@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav id="main-nav"></nav>
+    <?php require_once 'nav.php'; ?>
   </header>
 
   <main class="container">
@@ -32,7 +32,7 @@
       </fieldset><br>
 
       <fieldset>
-        <legend>Fasion reveal</legend>
+        <legend>Fashion reveal</legend>
 
    
         <div class="form-row">
@@ -142,6 +142,6 @@
       });
     });
   </script>
-
+<?php include 'footer.php'; ?>
 </body>
 </html>

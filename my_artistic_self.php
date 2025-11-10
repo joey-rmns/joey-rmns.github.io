@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" href="my_style.css">
-	  <script src="js/nav.js" defer></script>
+	  
 
 	  
 	  <title>My Artistic Self</title>

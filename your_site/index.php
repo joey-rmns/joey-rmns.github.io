@@ -11,7 +11,8 @@
 	</head>
 	<body>
 
-		<nav id="main-nav"></nav>
+		<?php require_once 'nav.php'; ?>
+		
 	<script>
 	  document.addEventListener('DOMContentLoaded', () => {
 	  const current_path = location.pathname;
@@ -52,10 +53,7 @@
 	  
 		</div>
 		
+<?php include 'footer.php'; ?>
 
-	
-	<footer>
-	  This website is made for CS203 labs!
-	</footer>
 	</body>
 	</html>

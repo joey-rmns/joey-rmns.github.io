@@ -1,0 +1,30 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="my_style.css">
+		<script src="js/nav.js" defer></script>
+
+		<title>My agency</title>
+	</head>
+	<body>
+
+		<?php require_once 'nav.php'; ?>
+	
+		<div class="body_wraper">	
+		
+		<h1>Nave Automation and Creative Agency </h1>
+		<img src="images/logo.png" alt="Nave logo" style="border: 3px solid #C89656; border-radius: 15px;">
+		<h2>About the agency</h2>
+
+	  
+		<p>Nave is an AI automation agency, founded by <a href="index.html">Joseph Antony Roumanos</a>, specializing mainly in automating lead captures and generations for Real estate agencies. Currently, using automated workflows and systems,
+		I automate inbound reach, emails and phone callers.<br> Part of Nave will also be an AI modeling agency, where I create ads and marketing campaigns, along side content for 
+		fashion and beauty houses using workflows</p>
+		
+		</div>
+		
+	<?php include 'footer.php'; ?>	   
+	</body>
+	</html>
