@@ -1,14 +1,27 @@
 <?php
 
+<?php
+
+if (
+    !isset($_GET['name'], $_GET['email'], $_GET['q1'], $_GET['q3'], $_GET['q5'])
+) {
+    
+    echo "<h1>Oops! Missing data</h1>";
+    echo "<p>Please go back and fill out all required fields using the form.</p>";
+    echo '<p><a href="my_form.php">&#8592; Return to Quiz</a></p>';
+    include 'footer.php';
+    exit();
+}
+
 require_once 'nav.php';
 
-$name = $_GET['name'] ?? '';
+$name  = $_GET['name'] ?? '';
 $email = $_GET['email'] ?? '';
-$q1 = $_GET['q1'] ?? '';
-$q3 = $_GET['q3'] ?? '';
-$q4 = $_GET['q4'] ?? '';
-$q5 = $_GET['q5'] ?? '';
-$q2 = $_GET['q2'] ?? []; 
+$q1    = $_GET['q1'] ?? '';
+$q3    = $_GET['q3'] ?? '';
+$q4    = $_GET['q4'] ?? '';
+$q5    = $_GET['q5'] ?? '';
+$q2    = $_GET['q2'] ?? [];
 
 if (!is_array($q2)) {
     $q2 = [$q2];
