@@ -55,6 +55,18 @@ html, body{
 	box-sizing: border-box;
 	height: 100%;
 	padding-top: 1.8%;
+	margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.container {
+    flex: 1;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -176,6 +188,7 @@ footer {
   position: fixed;          
   bottom: 0;                
   left: 0;
-  width: 100%;             
+  width: 100%; 
+  margin-top: auto;  
 }
 	

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" href="my_style.css">
-	  <script src="js/nav.js" defer></script>
+	  
 
 	  
 	  <title>My Artistic Self</title>
@@ -15,7 +15,16 @@
 		background-attachment: fixed;
 		background-size: cover;
 		background-position: center;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
 		}
+		
+		.body_wraper {
+			flex: 1;
+		}
+
 		.keyword {
 		font-family: "Arial", sans-serif;
 		margin: 0 20px;
@@ -54,13 +63,7 @@
 	</head>
 	<body>
 
-		<nav id="main-nav"></nav>
-	<script>
-	  document.addEventListener('DOMContentLoaded', () => {
-	  const current_path = location.pathname;
-	setNav(current_path);
-	});
-	</script>
+		<?php require_once 'nav.php'; ?>
 
 		<div class="body_wraper">
 		
@@ -141,8 +144,6 @@
   </script>
 		
 		
-	<footer>
-	  This website is made for CS203 labs!
-	</footer>
+	<?php include 'footer.php'; ?>
 	</body>
 	</html>
