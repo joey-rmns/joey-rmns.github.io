@@ -1,0 +1,34 @@
+{
+    "posts": [
+        {
+            "id": "p1",
+            "date": "2025-12-04",
+            "title": "Paris Fashion Week: Opening Night Highlights",
+            "category": "Paris",
+            "paragraphs": [
+                "Paris Fashion Week opened with a dramatic mix of tailoring, romantic silhouettes, and futuristic fabrics. The first shows set the tone with sculptural shoulders, fluid satins, and laser‑cut details that caught the light on every step of the runway.",
+                "Street style outside the venues was just as important as the catwalks. Attendees mixed archival designer pieces with up‑and‑coming brands, creating outfits that felt both nostalgic and ultra‑modern. Metallic accessories, oversized belts, and sharp sunglasses were everywhere."
+            ]
+        },
+        {
+            "id": "p2",
+            "date": "2025-12-04",
+            "title": "Power Dressing in Milan",
+            "category": "Milan",
+            "paragraphs": [
+                "Milan Fashion Week doubled down on power dressing, but in a softer, more relaxed way. Blazers were still structured, but paired with wide‑leg trousers, knit bralettes, or silk skirts, creating a balance between confidence and comfort.",
+                "Color palettes moved away from pure neutrals into rich chocolate browns, olive greens, and deep burgundies. Small details like contrast stitching, visible zippers, and sculpted buttons elevated the simplest silhouettes."
+            ]
+        },
+        {
+            "id": "p3",
+            "date": "2025-12-04",
+            "title": "City Style: What People Actually Wore",
+            "category": "City Style",
+            "paragraphs": [
+                "Beyond the runways, Fashion Week is really about what people wear between shows. This season, the most interesting looks came from playful layering: sheer tops over graphic tees, trench coats over sports jerseys, and silky dresses with chunky sneakers.",
+                "Accessories were bold but thoughtful. Tiny statement bags, stacked rings, and unexpected textures like vinyl and faux fur made outfits feel unique without looking overdone. The biggest trend: people dressing like themselves, not like a lookbook."
+            ]
+        }
+    ]
+}
